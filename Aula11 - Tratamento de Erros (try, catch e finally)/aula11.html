@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de erros em Javascript</title>
+</head>
+<body>
+    <h1>Vamos aprender sobre tratamentos de erros em Javascript</h1>
+
+    <!--
+        - Nessa aula estudaremos sobre tratamentos de erros usando o try, catch e finally.
+        - Tratamento de erros nos passa um feedback melhor do que está acontecendo no programa.
+        - Como o próprio nome ja diz, o "tratamento" de erros é feito para evitar um erro aconteça,
+        - Tentando de certa forma, prever o que pode acontecer ali.
+        - No bloco "try" inserimos uma rotina de tratamento de provaveis erros;
+        - No "try" não vai ser gerado obrigatóriamente um erro, mas sim, será tratados "possíveis" erros.
+        - O bloco "catch" funciona apartir do momento que no bloco "try" ocorre um erro, dessa forma
+          O erro é repassado ao bloco "catch", onde o tratamento adequado para o erro será dado.
+        - O bloco "finally" será executado caso ocorra um erro ou não, saliento que não é obrigatorio esse bloco.
+        - Podemos também gerar erros para que um estudo mais detalhado do programa criado possa ser realizado.
+        - Chamamos esses casos de "Exceções"  
+    -->
+
+    <script>
+
+        var num;
+        try{
+
+            num = prompt("digite um valor.");
+
+            if(num > 10){
+                throw new Error("Valor inválido.");
+            }
+            document.write("Valor: "+num);
+           // document.write("Felipe");// caso ocorra um erro aqui
+        }catch(e){
+
+            document.write("Error: " + e.message);
+
+            //document.write("Erro"); // o tratamento será realizado nesse método.
+           // console.log("Mensagem de erro: " + e.message);
+        }
+
+    </script>
+    
+</body>
+</html>

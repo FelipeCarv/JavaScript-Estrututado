@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de Erros em JS - IMD </title>
+</head>
+<body>
+    <h1>Aprendendo sobre tratamento de Erros em JS - IMD </h1>
+
+        <!--
+            - Tratamento de Erros em Javascript ---
+            - Try = Tentar;
+            - Catch = pegar;
+            - Finally = Finalmente.
+            - Podemos lançar usando o "throw";
+            - Tipos de erro: 
+            - Error > Lançado em tempo de execução.
+            - RangeError > Indica que o valor não está no intervalo definido.
+            - ReferenceError > Indica uma referencia a uma variável que não existe.
+            - TypeError > Indica que o argumento passado pra função é incompátivel.
+            - SyntaxError > Indica que estamos passando um argumento com erro de sintaxe.
+            - EvalError e URIError.
+            - Propriedades de Erros:
+            - Erro.name e Erro.message > 
+        -->
+
+            <p id="resultado"></p>
+    <script>
+
+        try{
+            var x = 0;
+            x.toUpperCase();
+        } catch(erro){
+            document.getElementById("resultado").innerHTML = erro;
+        }
+
+    </script>
+</body>
+</html>

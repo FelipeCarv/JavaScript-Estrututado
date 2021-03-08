@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05 - Javascript</title>
+</head>
+
+<body>
+    <h1>Aprendendo a usar o PROMPT em Javascript</h1>
+
+    <!--
+        - Semelhante ao Alert, o prompt é uma janela que irá aparecer ao usuário para que ele realize alguma ação;
+        - O prompt serve para receber dados do usuário e armazenar posteriormente para realizar alguma ação;
+        - O prompt tem uma área de mensagem e uma área de texto;
+        - Para a declaração do prompt usamos a expressão window.prompt(<string>, <string>);
+        - Do mesmo modo do alert, podemos omitir o préfixo "window" e declarar apenas prompt();
+        - Na declaração do prompt, está presente duas cadeias de caracteres;
+        - A primeira se refere ao Texto presente no prompt, instruindo o usuário para a ação;
+        - A segunda se refere ao texto presente na caixa que receberá os valores inseridos pelo usuário;
+        - De maneira completa, o prompt precisa receber o valor, deste modo temos que "var a = prompt()"; 
+        - É recomendável não usar a segunda caixa de string para não receber resultados divergentes.
+    -->
+    
+    <script>
+        var a = prompt("Digite um valor");
+        var b = prompt("Digite um segundo valor: ");
+        var c = (a*b);
+        
+        document.write("A multiplicação de " + a + " e "+ b + " é: " + c);
+
+    </script>
+</body>
+</html>

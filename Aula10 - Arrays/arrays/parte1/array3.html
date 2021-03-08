@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays em Javascript</title>
+</head>
+<body>
+    <h1>Vamos aprender mais sobre arrays em Javascript.</h1>
+
+    <!--
+        - O método Indexof serve para informar se determinada informação está presente dentro do array (posição).
+        - O método sort serve para ordenar os dados dentro do array.
+        - O método reverse serve para inverter as informações do array.
+        - O método Concat serve para concatenar dois arrays ou mais.
+        - O método Join junta todos os dados de um array em uma variável, separando apenas por virgulas.
+    -->
+
+    <script>
+        
+        var datas1 = [], datas2 = [], pos, datas = [];
+
+        datas1.push("Segunda"); //0
+        datas1.push("Terça"); //1
+        datas1.push("Quarta"); //2
+        datas1.push("Quinta"); //3
+        datas1.push("Sexta"); //4
+        datas1.push("Sabado"); //5
+        datas1.push("Domingo");//6
+
+        datas2.push("segunda"); //0
+        datas2.push("terça"); //1
+        datas2.push("quarta"); //2
+        datas2.push("quinta"); //3
+        datas2.push("sexta"); //4
+        datas2.push("sabado"); //5
+        datas2.push("domingo");//6
+
+        datas = datas1.concat(datas2) // concatenando os Arrays
+
+        document.write(datas[0] + "<br>");
+        document.write(datas[1]+ "<br>");
+        document.write(datas[2]+ "<br>");
+        document.write(datas[3]+ "<br>");
+        document.write(datas[4]+ "<br>");
+        document.write(datas[5]+ "<br>");
+        document.write(datas[6]+ "<br>");
+        document.write(datas[7]+ "<br>");
+        document.write(datas[8]+ "<br>");
+        document.write(datas[9]+ "<br>");
+        document.write(datas[10]+ "<br>");
+        document.write(datas[11]+ "<br>");
+        document.write(datas[12]+ "<br>");
+        document.write(datas[13]+ "<br>");
+
+        //VERIFICANDO O TAMANHO DOS ARRAYS
+        document.write("Tamanho do primeiro array: " + datas1.length + "<br>");
+        document.write("Tamanho do segundo array: " + datas2.length + "<br>");
+        document.write("Tamanho do total dos arrays: " + datas.length + "<br>");
+
+
+        // Ordenando e invertendo os dados
+        /*
+        num.sort();
+        num.reverse();
+        */
+
+
+
+        /*
+        var num = [0, 5, 7, 9, 8, 6, 1, 3, 4, 2];
+        document.write(num[0] + "<br>");
+        document.write(num[1] + "<br>");
+        document.write(num[2] + "<br>");
+        document.write(num[3] + "<br>");
+        document.write(num[4] + "<br>");
+        document.write(num[5] + "<br>");
+        document.write(num[6] + "<br>");
+        document.write(num[7] + "<br>");
+        document.write(num[8] + "<br>");
+        document.write(num[9] + "<br>");
+
+        //salvando os dados do vetor em apenas uma variável.
+        var numeros = num.join();
+        document.write("<br>" + numeros);
+        */
+
+
+
+        /*
+        var datas = [];
+
+        //inserindo elementos no vetor:
+        datas.push("Segunda"); //0
+        datas.push("Terça"); //1
+        datas.push("Quarta"); //2
+        datas.push("Quinta"); //3
+        datas.push("Sexta"); //4
+        datas.push("Sabado"); //5
+        datas.push("Domingo");//6
+
+        //Testando o indexof
+        var pos = datas.indexOf("Quarta");
+
+        if(pos < 0){
+            document.write("O elemento não está no vetor.");
+        }else{
+            document.write("O elemento está no vetor" + "<br>" + "Na posição: " + pos);
+        }*/
+
+
+    </script>
+</body>
+</html>

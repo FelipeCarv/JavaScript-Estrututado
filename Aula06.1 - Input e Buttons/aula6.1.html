@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula6.1 - Javascript</title>
+</head>
+<body>
+    <h1>Vamos aprender sobre Buttons em Javascript.</h1>
+
+    <!--Sobre Buttons:
+        - Button é uma ferramenta que permite criar um botão no site e realizar alguma alteração se solicitada;
+        - Button é um recurso do HTML, mas veremos aqui alguns recursos Javascript que incrementa na tag;
+        - Para declarar um button, usamos o <button>(nome_no_botão)</button>;
+    -->
+
+    <p id="textoid">Clique no Botão!</p> 
+
+    <button type="button" onclick='document.getElementById("textoid").innerHTML = "Você vai Conseguir!!"'>Botão</button>
+    <!--
+        - "type = button" serve para definir que o button é do tipo botão;
+        - O "onclick" é uma ação que será realizada ao usuário clicar no botão;
+        - getElementByID "Pega o elemento pelo ID", ou seja essa função recebe o ID de um elemento;
+        - O ".innerHTML" serve para retornar todo elemento HTML existente no elemento.
+        - Nesse exemplo que foi mostrado, o botão ao ser clicado vai receber o elemento "textoid" e vai alterar
+          ele para o texto "você vai Conseguir". 
+        
+    -->
+</body>
+</html>

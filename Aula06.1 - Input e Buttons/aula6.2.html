@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 6.1 - Javascript</title>
+</head>
+<body>
+    <h1>Aprendendo um pouco mais sobre buttons.</h1>
+
+    <p id="meu_texto_2" style="display:none">Este é o meu texto, esconda ou exiba ele!</p>
+
+<button type="button" onclick="document.getElementById('meu_texto_2').style.display='block'">Exibir texto</button>
+<button type="button" onclick="document.getElementById('meu_texto_2').style.display='none'">Esconder texto</button>
+
+<!--
+    - Semelhante ao exemplo anterior, nos temos um type, um onclick, getelementbyid;
+    - Style = display:none significa que não "existe" display visivel;
+    - style.display = block significa que o display é em bloco, ou seja, todo conteúdo exibido será em uma forma
+      de blocos;
+    - O "onclick" recebe uma ação ao clicar no botão, neste caso, pode receber um elemento por id, ou uma função.
+    - Depois do getElementById()"."<ação> , é realizado uma ação, no html, no botão e etc.
+-->
+</body>
+</html>

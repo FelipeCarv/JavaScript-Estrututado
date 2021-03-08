@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 08 - Javascript</title>
+</head>
+<body>
+    <h1>Aprendendo sobre funções em Javascript.</h1>
+
+    <!--
+        - Funções servem para melhor controlar e organizar o nosso código;
+        - Quando construimos funções e atribuímos comandos a elas, esses comando somente serão executados em momentos
+        especificos, esses momentos é quando 'Declaramos' uma função. (controlar o programa);
+        - Para declarar uma função, declaramos da seguinte forma 'function <nome_da_função>(<Parâmetros>){<conteudo}';
+        - Por exemplo 'function soma(){s1+s2};';
+        - Um exemplo de chamada de uma função: 'soma();';
+        - Funções também podem retornar valores, por exemplo 'var resultado = soma();'.
+    -->
+
+    <script>
+
+        escreve();
+
+       // soma(5,5);
+
+        var media = media(10,5,8);
+
+        document.write(media);
+
+        //função que imprime um texto no HTML;
+        function escreve(){
+            document.write("Vamos Aprender Javascript para resolver as listas e ser porreta na programação\n");
+        };
+
+        //função que soma dois numeros e imprime um texto no HTML
+        function soma(n1, n2){
+            var res = n1 + n2;
+            document.write(res);
+        }
+
+        //função que recebe 3 numeros e calcula a média.
+        function media(n1, n2, n3){
+            var md = (n1+n2+n3)/3;
+            return md;
+        }
+
+    </script>
+    
+</body>
+</html>

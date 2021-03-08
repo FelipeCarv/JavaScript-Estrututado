@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays em Javascript</title>
+</head>
+<body>
+    <h1>Vamos aprender mais sobre arrays em Javascript.</h1>
+    
+    <!---
+    - Neste aula vamos conhecer novos métodos de manipulação de Arrays.
+    - Método Push insere elementos sempre no final do array como estudamos anteriormente vet.push("<info>");
+    - Método unshift insere elementos sempre no inicio do array vet.unshift("<info>");
+    - Método pop remove elementos do final do array: vet.pop();
+    - Método shift remove elementos do inicio do array vet.shift();
+    - Método splice remove elementos do meio do array vet.splice(<indiceInicial>,<quantidadeElemRemovidos>);
+    -->
+
+    <script>
+        var datas = [];
+
+        //inserindo elementos no vetor:
+        datas.push("segunda"); //1
+        datas.push("terça"); //2
+        datas.push("quarta"); //3
+        datas.push("quinta"); //4
+        datas.push("sexta"); //5
+        datas.unshift("sabado"); // vai ser apresentado no inicio do vetor. //0
+
+        //Removendo os ultimos elementos do vetor:
+        //datas.pop()
+
+        //Removendo os elementos iniciais do vetor:
+        //datas.shift();
+
+        //Removendo os elementos no meio do vetor:
+        //datas.splice(2,3) 
+
+
+        //Imprimir os elementos do vetor:
+        document.write(datas[0] + "<br>");
+        document.write(datas[1] + "<br>");
+        document.write(datas[2] + "<br>");
+        document.write(datas[3] + "<br>");
+        document.write(datas[4] + "<br>");
+        document.write(datas[5] + "<br>");
+
+
+    </script>
+</body>
+</html>

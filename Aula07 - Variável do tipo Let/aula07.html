@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 07 - Javascript</title>
+</head>
+<body>
+    <h1>Aprendendo sobre o tipo de variável "let" em Javascript</h1>
+
+    <!--
+        - O tipo de variável "let" é um tipo que permite a manipulação de dados em determinada parte do código;
+        - Quando declaramos uma variável do tipo "var", essa variável é 'Global', ou seja, independente de onde
+        ela seja declarada, você poderá acessar essa variável em qualquer lugar;
+        - Se declaramos uma variável do tipo "var" dentro de uma função "func1()" essa variável vai poder ser
+        acessada dentro de uma função "func2()", "func3()", "func4()" ou até mesmo fora de uma função;
+        - Se declaramos uma variável do tipo "let" dentro de uma função "func1()" essa variável só poderá ser
+        acessada dentro da função "func1()";
+    -->
+
+    <script>
+        var numero = 10;
+
+        document.write(numero + "<br>");
+
+        if(numero == 10){// note que o valor da variável "numero" foi alterado, pois a variável é do tipo "let".
+            document.write("-----------"+ "<br>");
+            let numero = 50;
+            document.write(numero + "<br>");
+            document.write("-----------"+ "<br>");
+        }
+
+        document.write(numero + "<br>");
+    </script>
+
+
+</body>
+</html>

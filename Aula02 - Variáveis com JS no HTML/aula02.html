@@ -1,0 +1,41 @@
+<!DOCTYPE html> <!---->
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02 - JS</title>
+</head>
+
+<body>
+
+    <h1>Conteúdo JavaScript  -  Aula 02</h1>
+    <h2>Vamos aprender sobre métodos, variáveis, funções e muito mais.</h2>
+    
+    <!---Variáveis com JS:
+
+        - Variáveis são espaços de memória que armazenam temporariamente valores que serão processados posteriormente;
+        - Variáveis em JS são fracamente tipadas, ou seja, elas podem assumir valores diferentes independente do seu tipo;
+        - Para Declarar variáveis usamos o préfixo "Var" seguido do nome da variável;
+        - Podemos declarar variáveis atribuindo valores sem declarar o préfixo "Var", por exemplo "$curso = 2020";
+        - Variáveis são Case Sensitive, ou seja, existe diferença entre uma variável "x" e "X";
+        - Variáveis podem ser criadas usando "_" e "$".
+        - Podemos imprimir variáveis no "console.log()" ou no "document.write()".
+
+    -->
+    <script>
+
+        var cursoJS = "Felipe";
+        cursojs = 2020;
+        $cursoJS = "vamos aprender cada vez mais!!";
+        var _cursojs = "você consegue";
+
+        var resultado = cursoJS + "<br>" + cursojs + "<br>" + $cursoJS + "<br>" + _cursojs;
+        // Para dar quebra de linha, precisamos colocar a tag <br> como se fosse uma string.
+
+        //document.write só imprime uma variável. Para imprimir mais precisa concatenar.
+        document.write(resultado);
+
+    </script>
+</body>
+</html>

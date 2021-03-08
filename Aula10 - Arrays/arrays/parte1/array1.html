@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays em JS</title>
+</head>
+<body>
+    <h1>Vamos aprender sobre arrays em Javascript.</h1>
+
+    <!--
+        - Arrays são estruturas de dados capazes de armazenar informações de maneira sequêncial.
+        - Arrays podem ser imaginados como uma caixa, com várias divisões onde cada divisão contem um dado.
+        - Arrays podem armazenar, strings, numeros, letras, objetos e diversas outras instruções.
+        - Arrays são organizados por índices e endereços, onde o primeiro índice é o indice 0.
+        - Arrays são declarados da seguinte forma: var vet = new Array() // var vet[] = {...} // var vet = [...]
+        - As posições de armazenamento nos arrays podem ser gerenciadas, podemos adicionar, remover, mudar o valor.
+        - Para gerenciar Arrays devemos usar métodos. 
+        - Método Push é responsável por inserir elementos de maneira sequencial no array. 
+        - Para se usar o método push, chamamos a declaração da seguinte forma: vet.push("<info>");
+    -->
+
+    <script>
+        var cor = []; //Defini um array chamado de "cor";
+
+        cor.push("Preto"); //0
+        cor.push("Branco"); //1
+        cor.push("Vermelho"); //2
+        cor.push("Verde"); //3
+        cor.push("Azul"); //4
+
+        /*
+        cor[0] = "Preto";
+        cor[1] = "Branco";
+        cor[2] = "Vermelho";
+        cor[3] = "Verde";
+        cor[4] = "Azul";
+        */
+
+        document.write(cor[2]);
+
+        var itens = ["faca", "garfo", "colher", "Prato", "lanterna", "pano"];
+        var mochila = [];
+
+        mochila.push(itens[3]);
+        mochila.push(itens[0]);
+        mochila.push(itens[5]);
+        
+        document.write("<br>" + mochila[0]);
+        document.write("<br>" + mochila[1]);
+        document.write("<br>" + mochila[2]);
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06 - Javascript</title>
+</head>
+<body>
+    
+    <h1>Aprendendo sobre o Confirm em Javascript</h1>
+
+    <!--
+        - O confirm é uma operação do método "window" assim como o "Prompt" e o "Alert";
+        - O confirm pode ser declarado usando a expressão "window.confirm()";
+        - O confirm pode ser também declarado usando a expressão "confirm()";
+        - O confirm é uma operação que retorna valores booleanos, ou seja, true ou false;
+        - O confirm é usado quando é necessário que o usuário confirme uma operação;
+        - Sua janela apresenta um "Confirmar" ou "Cancelar";
+        - A maneira geral de se usar ele é da seguinte forma: "var v = confirm(<texto>)"; 
+    -->
+    <script>
+        
+        var a = prompt("Olá, como você se chama?");
+
+        alert(a + ", Vamos testar o confirm!!");
+
+        var b = confirm(a + ", Deseja testar o confirm?");
+
+        document.write(a + ", o resultado da confirmação foi: "+ b);
+    </script>
+</body>
+</html>

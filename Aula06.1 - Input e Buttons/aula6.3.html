@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<meta charset='UTF-8' />
+		<title>Programação Estruturada - Aula 01</title>
+	</head>
+	<body>
+		<noscript>Seu navegador não suporta JavaScript ou ele está desabilitado.</noscript>
+
+		<h1>Instruções JavaScript</h1>
+
+		<h2>Fornecendo Valores para o JavaScript</h2>
+
+        <!--
+            - O input é uma ferramenta que cria uma caixa;
+            - A caixa criada no input é do tipo "Text";
+            - Neste caso o input vai receber um texto dentro da caixa.
+        -->
+        Entrada: <input type="text" id="meuTexto" value="">
+
+        <!--
+            - O onclick está recebendo uma função que foi criada por mim;
+        -->
+        <button onclick="minhaOutraFuncao()">Clique Aqui</button>
+        
+		<p id="meu_texto_6"></p>
+
+		<script>
+
+//Essa função cria uma variável que recebe o valor inserido pelo input e altera o texto do "<p>" quando clica no botão. 
+		function minhaOutraFuncao() {
+            // variável x recebe qualquer valor obtido pelo input text.
+			var x = document.getElementById("meuTexto").value;
+            //o <p> vai ser alterado pelo valor da variável "x".
+			document.getElementById("meu_texto_6").innerHTML = x;
+		}
+
+
+        </script>
+        
+	</body>
+</html>
+				
